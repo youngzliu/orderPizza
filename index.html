@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Beep Boop!</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Young's Pizzeria</h1>
+        <blockquote class="blockquote">
+          <p class="mb-0">"The best pizza on the west coast - bar none!"</p>
+          <footer class="blockquote-footer">Everyone</footer>
+        </blockquote>
+      </div>
+      <form id="pizzaForm">
+        <label for="pizzaSize"><h3>What size pizza would you like?</h3></label>
+        <select class="form-control" id="pizzaSize">
+          <option value="small">Small</option>
+          <option value="medium">Medium</option>
+          <option value="large">Large</option>
+          <option value="xLarge">Extra Large</option>
+        </select>
+        <br>
+        <h3>What toppings would you like?</h3>
+        <p>Vegetables and extras are $1.00 each. Meats are $1.50 each. Toppings are more expensive on larger pizzas.</p>
+        <div class="row">
+          <div class="col-md-4">
+            <h4>Vegetables:</h4>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="checkbox" name="vegetable" value="mushrooms" class="">Mushrooms
+              </span>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">
+                <input type="checkbox" name="vegetable" value="green peppers">Green Peppers
+              </span>
+            </div>
+            <input type="checkbox" name="vegetable" value="onions">Onions<br>
+            <input type="checkbox" name="vegetable" value="tomatoes">Tomatoes<br>
+            <input type="checkbox" name="vegetable" value="banana peppers">Banana Peppers<br>
+            <input type="checkbox" name="vegetable" value="black olives">Black Olives<br>
+            <input type="checkbox" name="vegetable" value="green olives">Green Olives<br>
+            <input type="checkbox" name="vegetable" value="jalapeno peppers">Jalapeno Peppers<br>
+            <input type="checkbox" name="vegetable" value="mushroom">Garlic<br>
+            <input type="checkbox" name="vegetable" value="pineapple">Pineapple<br>
+          </div>
+          <div class="col-md-4">
+            <h4>Meats:</h4>
+          </div>
+          <div class="col-md-4">
+            <h4>Extras:</h4>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
