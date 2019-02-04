@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-3.3.1.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
-    <title>Beep Boop!</title>
+    <title>Young's Pizzeria</title>
   </head>
   <body>
     <div class="container">
@@ -26,79 +26,158 @@
         </select>
         <br>
         <h3>What toppings would you like?</h3>
-        <p>Vegetables and extras are $1.00 each. Meats are $1.50 each. Toppings are more expensive on larger pizzas.</p>
+        <p>Vegetables and extras are $1.00 each, and meats are $1.50 each on a small pizza. Toppings are more expensive on larger pizzas.</p>
         <div class="row">
           <div class="col-md-4">
-            <h4>Vegetables:</h4>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="mushrooms" id="veg1">
+            <div class="card">
+              <h4 class="card-header">Vegetables:</h4>
+              <div class="card-body">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="mushrooms" id="veg1">
+                  </div>
+                  <label for="veg1" class="form-control">Mushrooms</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="green peppers" id="veg2">
+                  </div>
+                  <label for="veg2" class="form-control">Green Peppers</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="onions" id="veg3">
+                  </div>
+                  <label for="veg3" class="form-control">Onions</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="tomatoes" id="veg4">
+                  </div>
+                  <label for="veg4" class="form-control">Tomatoes</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="banana peppers" id="veg5">
+                  </div>
+                  <label for="veg5" class="form-control">Banana Peppers</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="black olives" id="veg6">
+                  </div>
+                  <label for="veg6" class="form-control">Black Olives</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="green olives" id="veg7">
+                  </div>
+                  <label for="veg7" class="form-control">Green Olives</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="jalapeno peppers" id="veg8">
+                  </div>
+                  <label for="veg8" class="form-control">Jalapeno Peppers</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="garlic" id="veg9">
+                  </div>
+                  <label for="veg9" class="form-control">Garlic</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="vegetable" value="pineapple" id="veg10">
+                  </div>
+                  <label for="veg10" class="form-control">Pineapple</label>
+                </div>
               </div>
-              <label for="veg1" class="form-control">Mushrooms</label>
             </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="green peppers" id="veg2">
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <h4 class="card-header">Meats:</h4>
+              <div class="card-body">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="meat" value="anchovies" id="meat1">
+                  </div>
+                  <label for="meat1" class="form-control">Anchovies</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="meat" value="beef" id="meat2">
+                  </div>
+                  <label for="meat2" class="form-control">Beef</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="meat" value="bacon" id="meat3">
+                  </div>
+                  <label for="meat3" class="form-control">Bacon</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="meat" value="ham" id="meat4">
+                  </div>
+                  <label for="meat4" class="form-control">Ham</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="meat" value="chicken" id="meat5">
+                  </div>
+                  <label for="meat5" class="form-control">Chicken</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="meat" value="sausage" id="meat6">
+                  </div>
+                  <label for="meat6" class="form-control">Sausage</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="meat" value="pepperoni" id="meat7">
+                  </div>
+                  <label for="meat7" class="form-control">Pepperoni</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="meat" value="prosciutto" id="meat8">
+                  </div>
+                  <label for="meat8" class="form-control">Prosciutto</label>
+                </div>
               </div>
-              <label for="veg2" class="form-control">Green Peppers</label>
             </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="onions" id="veg3">
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <h4 class="card-header">Extras:</h4>
+              <div class="card-body">
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="extra" value="extra sauce" id="extra1">
+                  </div>
+                  <label for="extra1" class="form-control">Extra Sauce</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="extra" value="extra cheese" id="extra2">
+                  </div>
+                  <label for="extra2" class="form-control">Extra Cheese</label>
+                </div>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend input-group-text">
+                    <input type="checkbox" name="extra" value="a pan crust" id="extra3">
+                  </div>
+                  <label for="extra3" class="form-control">Pan Crust</label>
+                </div>
               </div>
-              <label for="veg3" class="form-control">Onions</label>
             </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="tomatoes" id="veg4">
-              </div>
-              <label for="veg4" class="form-control">Tomatoes</label>
-            </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="banana peppers" id="veg5">
-              </div>
-              <label for="veg5" class="form-control">Banana Peppers</label>
-            </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="black olives" id="veg6">
-              </div>
-              <label for="veg6" class="form-control">Black Olives</label>
-            </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="green olives" id="veg7">
-              </div>
-              <label for="veg7" class="form-control">Green Olives</label>
-            </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="jalapeno peppers" id="veg8">
-              </div>
-              <label for="veg8" class="form-control">Jalapeno Peppers</label>
-            </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="garlic" id="veg9">
-              </div>
-              <label for="veg9" class="form-control">Garlic</label>
-            </div>
-            <div class="input-group mb-2">
-              <div class="input-group-prepend input-group-text">
-                <input type="checkbox" name="vegetable" value="pineapple" id="veg10">
-              </div>
-              <label for="veg10" class="form-control">Pineapple</label>
-            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h4>Meats:</h4>
-        </div>
-        <div class="col-md-4">
-          <h4>Extras:</h4>
-        </div>
-      </div>
-
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Order!</button>
       </form>
     </div>
   </body>
