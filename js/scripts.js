@@ -27,25 +27,31 @@ Pizza.prototype.calculatePrice = function(){
       price += topping.myPrice * toppingMultiplier;
     });
   }
-  return price;
+  return price.toFixed(2);
 };
 
 Pizza.prototype.message = function(){
   var pizzaMessage = "";
-  pizzaMessage += "You ordered a " + this.mySize + " pizza";
+  if(this.mySize === "extra large"){
+    pizzaMessage += "You ordered an extra large pizza";
+  }
+  else{
+    pizzaMessage += "You ordered a " + this.mySize + " pizza";
+  }
   if(this.myToppings.length !== 0){
     pizzaMessage += " with";
     if(this.myToppings.length === 1){
       pizzaMessage += " " + this.myToppings[0].myName;
     }
     else{
-      for(var i = 0; i < this.myToppings.length - 1; i++){
+      for(var i = 0; i < this.myToppings.length - 2; i++){
         pizzaMessage += " " + this.myToppings[i].myName + ",";
-      });
-      pizzaMessage += " and" + this.myToppings[this.myToppings.length - 1].myName;
+      };
+      pizzaMessage += " " + this.myToppings[this.myToppings.length - 2].myName;
+      pizzaMessage += " and " + this.myToppings[this.myToppings.length - 1].myName;
     }
   }
-  pizzaMessage =+ ". Your total price comes out to $" + this.calculatePrice() + ".";
+  pizzaMessage += ". Your total price comes out to $" + this.calculatePrice() + ".";
   return pizzaMessage;
 };
 
@@ -58,6 +64,18 @@ function Topping(name, price){
 //Front End
 $(document).ready(function(){
   $("form#pizzaForm").submit(function(event){
-
+    event.preventDefault();
+    var toppings = [];
+    $("input:checkbox[name=vegetable]:checked").each(function(){
+      toppings.push(new Topping($(this).val(), 1.00));
+    });
+    $("input:checkbox[name=meat]:checked").each(function(){
+      toppings.push(new Topping($(this).val(), 1.50));
+    });
+    $("input:checkbox[name=extra]:checked").each(function(){
+      toppings.push(new Topping($(this).val(), 1.25));
+    });
+    var pizza = new Pizza($("#pizzaSize").val(), toppings);
+    $("#pizzaResults").text(pizza.message());
   });
 });
