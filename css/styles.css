@@ -10,3 +10,19 @@ h3, h4{
   font-weight: bold;
   font-size: 2em;
 }
+
+body{
+  background-color: #f3f4b5;
+}
+
+.jumbotron{
+  background-color: #FA8072;
+}
+
+#meatCard{
+  background-color: #b35900;
+}
+
+#extrasCard{
+  background-color: #ffff66;
+}
