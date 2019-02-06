@@ -62,6 +62,22 @@ function Topping(name, price){
 };
 
 //Front End
+
+var attachPostOrderButtons = function(){
+  $("#resultButtons").html('<button type="button" class="btn btn-primary btn-lg btn-block" id="confirmButton">Confirm</button> <button type="button" class="btn btn-secondary btn-lg btn-block" id=tryButton>Try again</button>');
+  $("#confirmButton").click(function(){
+    $("#resultButtons").empty();
+    $("#pizzaResults").text("Your absolutely delicious freshly oven baked pizza is being prepared! It should be done in around 15-20 minutes.")
+    $("#resultButtons").html('<button type="button" class="btn btn-primary btn-lg btn-block" id="orderAgain">Order another?</button>');
+    $("#orderAgain").click(function(){
+      location.reload();
+    });
+  });
+  $("#tryButton").click(function(){
+    location.reload();
+  });
+};
+
 $(document).ready(function(){
   $("form#pizzaForm").submit(function(event){
     event.preventDefault();
@@ -76,6 +92,8 @@ $(document).ready(function(){
       toppings.push(new Topping($(this).val(), 1.25));
     });
     var pizza = new Pizza($("#pizzaSize").val(), toppings);
-    $("#pizzaResults").text(pizza.message());
+    $("#orderButton").remove();
+    $("#pizzaResults").text(pizza.message() + " Are you sure you would like to order this?");
+    attachPostOrderButtons();
   });
 });
